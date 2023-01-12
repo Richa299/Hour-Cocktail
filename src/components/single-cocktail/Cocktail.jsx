@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Link } from "react-router-dom"
 import './Cocktail.css'
 
@@ -8,10 +7,10 @@ function Cocktail({image, name, id, info, glass}){
       <div className="img-container">
         <img src={image} alt={name} className="images"/>
         <div className="cocktail-footer">
-        <h3>{name}</h3>
-        <h4>{glass}</h4>
-        <p>{info}</p>
-        <Link to={`/cocktail/${id}`}>details</Link>
+        <span className="name">{name}</span>
+        <span className="info">{info}</span>
+           <span className="glass">{glass}</span>
+        <Link to={`/cocktail/${id}`}><button className="button">Details</button></Link>
       </div>
       </div>
       

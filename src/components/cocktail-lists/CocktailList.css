@@ -2,3 +2,10 @@
     margin: auto;
     margin-top: 50px;
 }
+.cocktails-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: linear-gradient(to right,rgb(152, 152, 158),black); */
+}

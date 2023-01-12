@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams, Link} from "react-router-dom"
 import ReactLoading from "react-loading";
+import './CocktailDetail.css'
 const url='https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='
 
 function CocktailDetails(){
@@ -60,13 +61,22 @@ function CocktailDetails(){
     if(!cocktail){
         return <h2>no cocktail</h2>
     }
-    const {name,image,category,info,glass,instructions,ingredients}=cocktail
+    const {name,image,category,instructions,ingredients}=cocktail
     return(
-        <div>
-            <h2>{name}</h2>
-            <img src={image} />
-            <p>{category}</p>
-            <Link to="/">back home</Link>
+        <div className="details">
+            <img src={image} className="thumbnail" alt={name}/>
+            <div className="footer-part">
+            <p className="d-name"><span>Name: </span>{name}</p>
+            <p className="d-cat"><span>Category: </span>{category}</p>
+            <p className="d-instruct"><span>Instructions: </span>{instructions}</p>
+            <p className="d-ingredients"><span>Ingredients: </span>
+            {ingredients.map((item,index)=>{
+               return item?<span key={index} className="items">{item}</span>:null}
+            )}
+            
+            </p>
+            <Link to="/"><button className="back">Back Home</button></Link>
+            </div>
         </div>
     )
 }
