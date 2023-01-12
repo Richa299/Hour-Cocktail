@@ -1,10 +1,11 @@
-import CocktailList from "../components/CocktailList"
-import SearchForm from "../components/SearchForm"
+
+import CocktailList from "../components/cocktail-lists/CocktailList"
+import SearchForm from "../components/search-form/SearchForm"
 
 function Home(){
 return(
     <div>
-        <SearchForm />
+        <SearchForm/>
         <CocktailList/>
     </div>
 )
