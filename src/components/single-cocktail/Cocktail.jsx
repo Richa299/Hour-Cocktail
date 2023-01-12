@@ -11,7 +11,7 @@ function Cocktail({image, name, id, info, glass}){
         <h3>{name}</h3>
         <h4>{glass}</h4>
         <p>{info}</p>
-        <Link to="/cocktail/:id">details</Link>
+        <Link to={`/cocktail/${id}`}>details</Link>
       </div>
       </div>
       
