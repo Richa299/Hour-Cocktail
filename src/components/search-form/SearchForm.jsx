@@ -18,7 +18,7 @@ function SearchForm(){
 return(
    <div className="form">
        <form className="search-form" onSubmit={handleSubmit}>
-        <label htmlFor="name">Search your cocktail</label>
+        <label htmlFor="name">Search Your Favorite Cocktail</label>
         <input type="text" id="name" ref={searchValue} onChange={searchCocktail}/>
        </form>
    </div>
