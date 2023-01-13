@@ -4,8 +4,7 @@
 }
 .cocktails-container{
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: auto;
+    /* max-width: 50vw; */
     /* background-image: linear-gradient(to right,rgb(152, 152, 158),black); */
 }
