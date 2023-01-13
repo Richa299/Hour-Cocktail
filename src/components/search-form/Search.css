@@ -25,3 +25,12 @@ label{
     font-weight: 700;
     font-family: 'Courier New', Courier, monospace;
 }
+
+@media screen and (min-width: 2523px){
+   .search-form{
+    width:15vw;
+   }
+   input{
+    width:10vw;
+   }
+}

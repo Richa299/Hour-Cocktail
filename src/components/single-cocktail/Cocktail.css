@@ -151,7 +151,7 @@
 
 }
 
-@media screen and (min-width: 901px){
+@media screen and (min-width: 901px) and (max-width: 1439px){
     .cocktail-list{
         display: grid;
         margin:auto;
@@ -170,6 +170,74 @@
         margin: auto;
         margin-top: 15px;
         border-radius: 50%;
+    }
+    .button{
+        width:8vw;
+    font-size: 15px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .glass{
+        font-size: 18px;
+        margin-top: -15px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2522px){
+    .cocktail-list{
+        display: grid;
+        margin:auto;
+        grid-template-columns: auto auto auto;
+        margin-bottom: 10px;
+    }
+    .images{
+        width:20vw;
+        height:28vh;
+        border-radius: 5% 5% 0% 0%;
+    }
+    .img-container{
+        height: 350px;
+        width:20vw;
+        margin: auto;
+        margin-top: 15px;
+        border-radius: 5%;
+    }
+    .button{
+        width:8vw;
+    font-size: 15px;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .glass{
+        font-size: 18px;
+        margin-top: -15px;
+    }
+
+}
+
+@media screen and (min-width: 2523px){
+    .cocktail-list{
+        display: grid;
+        row-gap: 5rem;
+        margin:auto;
+        margin-top: 30px;
+        grid-template-columns: auto auto auto;
+        margin-bottom: 10px;
+    }
+    .images{
+        width:20vw;
+        height:28vh;
+        border-radius: 5% 5% 0% 0%;
+    }
+    .img-container{
+        background-color: black;
+        height: 650px;
+        width:20vw;
+        margin: auto;
+        border-radius: 5%;
     }
     .button{
         width:8vw;
