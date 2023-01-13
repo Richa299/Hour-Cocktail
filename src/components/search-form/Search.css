@@ -26,7 +26,7 @@ label{
     font-family: 'Courier New', Courier, monospace;
 }
 
-@media screen and (min-width: 2523px){
+@media screen and (min-width: 2236px){
    .search-form{
     width:15vw;
    }
