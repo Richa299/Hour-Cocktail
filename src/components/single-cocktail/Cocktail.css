@@ -233,12 +233,12 @@
     }
     .images{
         width:30vw;
-        height:25vh;
+        height:35vh;
         /* border-radius: 50%; */
         border-radius: 5% 5% 0% 0%;
     }
     .img-container{
-        height: 460px;
+        height: 380px;
         width:30vw;
         margin: auto;
         margin-top: 15px;
@@ -372,12 +372,12 @@
     }
     .images{
         width:20vw;
-        height:28vh;
+        height:20vh;
         border-radius: 5% 5% 0% 0%;
     }
     .img-container{
         background-color: black;
-        height: 500px;
+        height: 600px;
         width:20vw;
         margin: auto;
         border-radius: 5%;
